@@ -7,6 +7,7 @@ public class Blender : MonoBehaviour
     private Camera mainCamera;
     private bool isFilled = false;
     [SerializeField] private SpriteRenderer[] inputtedIngredients;
+    [SerializeField] private SpriteRenderer combined;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +39,9 @@ public class Blender : MonoBehaviour
 
     public void Blend()
     {
-
         if (isFilled)
         {
+
             Debug.Log("Blended");
             foreach (SpriteRenderer ingredient in inputtedIngredients)
             {
@@ -51,6 +52,7 @@ public class Blender : MonoBehaviour
                 }
 
             }
+
             isFilled = false;
         }
 

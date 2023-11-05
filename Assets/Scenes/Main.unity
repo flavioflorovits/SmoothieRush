@@ -570,6 +570,11 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 9015926160680314841, guid: 935e639e7991d604baff97afe522721f, type: 3}
   m_PrefabInstance: {fileID: 8828340119555538276}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1275278302 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1164677264366818323, guid: 935e639e7991d604baff97afe522721f, type: 3}
+  m_PrefabInstance: {fileID: 8828340119555538276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629146058
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9208035945915873942, guid: 935e639e7991d604baff97afe522721f, type: 3}
+      propertyPath: combined
+      value: 
+      objectReference: {fileID: 1275278302}
     - target: {fileID: 9208035945915873942, guid: 935e639e7991d604baff97afe522721f, type: 3}
       propertyPath: inputtedIngredients.Array.size
       value: 4
