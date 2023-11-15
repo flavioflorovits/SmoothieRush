@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: fruitColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
+      propertyPath: ingredientSO
+      value: 
+      objectReference: {fileID: 11400000, guid: e85505df247f3334a94ee5a1c002a92b, type: 2}
     - target: {fileID: 3433099740107410457, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: m_Sprite
       value: 

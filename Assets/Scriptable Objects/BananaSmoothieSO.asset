@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ee956a2c6866a4bac3cf4f9803edfc, type: 3}
   m_Name: BananaSmoothieSO
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2908586073939111753, guid: 1562990684ae3ce4a9dc2b8b6f885244, type: 3}
+  prefab: {fileID: 4891830118781964892, guid: 1562990684ae3ce4a9dc2b8b6f885244, type: 3}
   sprite: {fileID: -1603509732, guid: 4f4511dd3b534484cabd7d047e80d254, type: 3}
-  collider: {fileID: 0}
-  rb: {fileID: 0}
-  objectName: Banana Smoothie
-  recipe: []
+  recipeName: Banana Smoothie
+  ingredients:
+  - {fileID: 11400000, guid: e85505df247f3334a94ee5a1c002a92b, type: 2}
+  - {fileID: 11400000, guid: e85505df247f3334a94ee5a1c002a92b, type: 2}

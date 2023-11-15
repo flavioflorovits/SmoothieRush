@@ -7,7 +7,10 @@ public class Blender : MonoBehaviour
     private Camera mainCamera;
     private bool isFilled = false;
     [SerializeField] private SpriteRenderer[] inputtedIngredients;
+    [SerializeField] private List<IngredientSO> inputtedSOs;
     [SerializeField] private SpriteRenderer combined;
+
+    [SerializeField] private List<SmoothieSO> smoothieRecipes = new List<SmoothieSO>();
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,13 @@ public class Blender : MonoBehaviour
         {
 
             Debug.Log("Blended");
+
+            GameObject doneSmoothie = CheckSmoothie(inputtedSOs);
+            if (doneSmoothie != null)
+            {
+                Instantiate(doneSmoothie, transform.position, Quaternion.identity);
+                Debug.Log(doneSmoothie.name);
+            }
             foreach (SpriteRenderer ingredient in inputtedIngredients)
             {
 
@@ -51,6 +61,11 @@ public class Blender : MonoBehaviour
                     ingredient.enabled = false;
                 }
 
+            }
+
+            for (int i = 0; i < inputtedSOs.Count; i++)
+            {
+                inputtedSOs.RemoveAt(i);
             }
 
             isFilled = false;
@@ -63,6 +78,7 @@ public class Blender : MonoBehaviour
         Debug.Log("collided");
         if (collision.gameObject.CompareTag("Ingredient"))
         {
+            inputtedSOs.Add(collision.gameObject.GetComponent<FruitInfo>().ingredientSO);
             Debug.Log(inputtedIngredients[0]);
             foreach(SpriteRenderer ingredient in inputtedIngredients)
             {
@@ -78,5 +94,21 @@ public class Blender : MonoBehaviour
 
             }
         }
+    }
+
+    private GameObject CheckSmoothie(List<IngredientSO> playerBlend)
+    {
+        HashSet<IngredientSO> playerIngredients = new HashSet<IngredientSO>(playerBlend);
+
+        foreach (var recipe in smoothieRecipes)
+        {
+            HashSet<IngredientSO> recipeIngredients = new HashSet<IngredientSO>(recipe.ingredients);
+
+            if (playerIngredients.SetEquals(recipeIngredients))     
+            {
+                return recipe.prefab;
+            }
+        }
+        return null;
     }
 }
