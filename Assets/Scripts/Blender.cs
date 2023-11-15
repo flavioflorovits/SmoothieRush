@@ -7,7 +7,7 @@ public class Blender : MonoBehaviour
     private Camera mainCamera;
     private bool isFilled = false;
     [SerializeField] private SpriteRenderer[] inputtedIngredients;
-    [SerializeField] private List<IngredientSO> inputtedSOs;
+    public List<IngredientSO> inputtedSOs;
     [SerializeField] private SpriteRenderer combined;
 
     [SerializeField] private List<SmoothieSO> smoothieRecipes = new List<SmoothieSO>();
@@ -78,14 +78,14 @@ public class Blender : MonoBehaviour
         Debug.Log("collided");
         if (collision.gameObject.CompareTag("Ingredient"))
         {
-            inputtedSOs.Add(collision.gameObject.GetComponent<FruitInfo>().ingredientSO);
+            inputtedSOs.Add(collision.gameObject.GetComponent<IngredientInfo>().ingredientSO);
             Debug.Log(inputtedIngredients[0]);
             foreach(SpriteRenderer ingredient in inputtedIngredients)
             {
 
                 if (!ingredient.enabled)
                 {
-                    ingredient.color = collision.gameObject.GetComponent<FruitInfo>().fruitColor;
+                    ingredient.color = collision.gameObject.GetComponent<IngredientInfo>().fruitColor;
                     ingredient.enabled = true;
                     Destroy(collision.gameObject);
                     isFilled = true;
