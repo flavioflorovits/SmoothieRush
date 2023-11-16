@@ -93,18 +93,17 @@ public class Blender : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collided");
+        Debug.Log("Collided with blender");
         if (collision.gameObject.CompareTag("Ingredient"))
         {
-            inputtedSOs.Add(collision.gameObject.GetComponent<IngredientInfo>().ingredientSO);
-            Debug.Log(inputtedIngredients[0]);
             foreach(SpriteRenderer ingredient in inputtedIngredients)
             {
 
                 if (!ingredient.enabled)
                 {
+                    inputtedSOs.Add(collision.gameObject.GetComponent<IngredientInfo>().ingredientSO);
                     ingredient.color = collision.gameObject.GetComponent<IngredientInfo>().fruitColor;
                     ingredient.enabled = true;
                     Destroy(collision.gameObject);
@@ -114,6 +113,7 @@ public class Blender : MonoBehaviour
 
             }
         }
+        
     }
 
     private SmoothieSO CheckSmoothie(List<IngredientSO> playerBlend)

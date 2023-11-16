@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 5816448761396682518}
   - component: {fileID: 9208035945915873942}
   - component: {fileID: 8143807084633652892}
-  - component: {fileID: 3290238284744160226}
+  - component: {fileID: -2403256768303034709}
   m_Layer: 0
   m_Name: Blender
   m_TagString: Blender
@@ -479,7 +479,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -495,7 +495,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.95, y: 5.1}
   m_EdgeRadius: 0
---- !u!50 &3290238284744160226
+--- !u!50 &-2403256768303034709
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 0
 --- !u!1 &6900665208324795218
 GameObject:
   m_ObjectHideFlags: 0

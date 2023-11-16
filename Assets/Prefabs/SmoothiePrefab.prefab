@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 49
   m_Sprite: {fileID: -973425592, guid: 0bbfcb6ecd86b7040954b8eb18ceaa88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_FlipX: 0
@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 7249003632822652832}
   - component: {fileID: 5820352321096609582}
   - component: {fileID: 8230668347051231476}
-  - component: {fileID: 9161409771440481643}
   m_Layer: 0
   m_Name: SmoothiePrefab
   m_TagString: Smoothie
@@ -161,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 50
   m_Sprite: {fileID: 523366562, guid: 0bbfcb6ecd86b7040954b8eb18ceaa88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -233,33 +232,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.570001, y: 23.954357}
   m_EdgeRadius: 0
---- !u!50 &9161409771440481643
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711750324070344782}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &3593443964739630530
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +304,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 48
   m_Sprite: {fileID: 1087386617, guid: 0bbfcb6ecd86b7040954b8eb18ceaa88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
