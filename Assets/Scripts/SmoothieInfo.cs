@@ -7,5 +7,11 @@ public class SmoothieInfo : MonoBehaviour
 
     public SpriteRenderer colorSprite;
     public SmoothieSO smoothieSO;
+    public GameObject blender;
+
+    private void OnDestroy()
+    {
+        blender.SetActive(true);
+    }
 
 }

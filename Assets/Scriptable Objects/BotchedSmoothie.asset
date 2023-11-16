@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ee956a2c6866a4bac3cf4f9803edfc, type: 3}
-  m_Name: BananaSmoothieSO
+  m_Name: BotchedSmoothie
   m_EditorClassIdentifier: 
   prefab: {fileID: 711750324070344782, guid: b793156637a7aad46a794f9d03ca3281, type: 3}
-  ingredientCount: 3
-  recipeName: Banana Smoothie
-  ingredients:
-  - {fileID: 11400000, guid: e85505df247f3334a94ee5a1c002a92b, type: 2}
-  - {fileID: 11400000, guid: 9d90412c213d573498edcad8fc446599, type: 2}
+  ingredientCount: 0
+  recipeName: Botched Smoothie
+  ingredients: []

@@ -416,7 +416,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1414091176, guid: 8d6fa67c48660944c9be1ff72bc0b797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -441,14 +441,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputtedIngredients:
-  - {fileID: 1907307815914677843}
-  - {fileID: 1325816337885043160}
-  - {fileID: 4328889217375914417}
-  - {fileID: 6900665208324795218}
-  inputtedPrefabs: []
-  combined: {fileID: 0}
+  - {fileID: 4748760206501876590}
+  - {fileID: 2272863306894663122}
+  - {fileID: 5039485585835718717}
+  - {fileID: 9015926160680314841}
+  inputtedSOs: []
+  combined: {fileID: 1164677264366818323}
   smoothieRecipes:
   - {fileID: 11400000, guid: 8d3f7a3e6a6848244a0522889cb3b55a, type: 2}
+  botchedSmoothieSO: {fileID: 11400000, guid: 7cd5cbb8ef0626b4c89fb35a605f5da5, type: 2}
 --- !u!61 &8143807084633652892
 BoxCollider2D:
   m_ObjectHideFlags: 0

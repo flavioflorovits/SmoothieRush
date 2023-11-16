@@ -12,6 +12,8 @@ public class Blender : MonoBehaviour
 
     [SerializeField] private List<SmoothieSO> smoothieRecipes = new List<SmoothieSO>();
 
+    [SerializeField] private SmoothieSO botchedSmoothieSO;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,12 +60,19 @@ public class Blender : MonoBehaviour
                     b += sprite.color.b;
                 }
             }
-            GameObject doneSmoothie = CheckSmoothie(inputtedSOs);
-            if (doneSmoothie != null)
+            SmoothieSO checkedRecipe = CheckSmoothie(inputtedSOs);
+            Debug.Log(checkedRecipe);
+            GameObject doneSmoothie;
+            if (checkedRecipe != null)
             {
+                doneSmoothie = checkedRecipe.prefab;
                 GameObject newObject = Instantiate(doneSmoothie, transform.position, Quaternion.identity);
                 Debug.Log(newObject.name);
-                newObject.GetComponent<SmoothieInfo>().colorSprite.material.color = new Color(r/colorCount, g/colorCount, b/colorCount, 20f);
+                SmoothieInfo newObjectInfo = newObject.GetComponent<SmoothieInfo>();
+                newObjectInfo.colorSprite.color = new Color(r/colorCount, g/colorCount, b/colorCount, 220f/255f);
+                newObjectInfo.smoothieSO = checkedRecipe;
+                newObjectInfo.blender = gameObject;
+                newObject.name = checkedRecipe.recipeName;
             }
             foreach (SpriteRenderer ingredient in inputtedIngredients)
             {
@@ -78,6 +87,8 @@ public class Blender : MonoBehaviour
             inputtedSOs.Clear();
 
             isFilled = false;
+
+            gameObject.SetActive(false);
         }
 
     }
@@ -105,7 +116,7 @@ public class Blender : MonoBehaviour
         }
     }
 
-    private GameObject CheckSmoothie(List<IngredientSO> playerBlend)
+    private SmoothieSO CheckSmoothie(List<IngredientSO> playerBlend)
     {
         HashSet<IngredientSO> playerIngredients = new HashSet<IngredientSO>(playerBlend);
 
@@ -119,11 +130,11 @@ public class Blender : MonoBehaviour
 
                 if (playerIngredients.SetEquals(recipeIngredients))     
                 {
-                    return recipe.prefab;
+                    return recipe;
                 }
             }
         }
-        return null;
+        return botchedSmoothieSO;
     }
 
 }

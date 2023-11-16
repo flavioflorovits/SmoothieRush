@@ -11,6 +11,8 @@ public class IngredientTouch : MonoBehaviour
     private Camera mainCamera;
     private bool isDragging = false;
 
+    private int originalOrder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,8 @@ public class IngredientTouch : MonoBehaviour
                         if(prefabToClone != null)
                         {
                             clonedObject = Instantiate(prefabToClone, touchPosition, Quaternion.identity);
+                            originalOrder = clonedObject.GetComponent<SpriteRenderer>().sortingOrder;
+                            clonedObject.GetComponent<SpriteRenderer>().sortingOrder = 100;
                             isDragging = true;
                         }
 
@@ -59,6 +63,15 @@ public class IngredientTouch : MonoBehaviour
                     isDragging = false;
                     if (clonedObject != null)
                     {
+                        clonedObject.GetComponent<SpriteRenderer>().sortingOrder = originalOrder;
+                        Destroy(clonedObject);
+                    }
+                break;
+                case TouchPhase.Canceled:
+                    isDragging = false;
+                    if (clonedObject != null)
+                    {
+                        clonedObject.GetComponent<SpriteRenderer>().sortingOrder = originalOrder;
                         Destroy(clonedObject);
                     }
                 break;
