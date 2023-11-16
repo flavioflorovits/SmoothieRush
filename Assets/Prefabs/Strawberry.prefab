@@ -10,16 +10,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: fruitColor.b
-      value: 0
+      value: 0.47547168
       objectReference: {fileID: 0}
     - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: fruitColor.g
-      value: 0
+      value: 0.47547168
       objectReference: {fileID: 0}
     - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: fruitColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
+      propertyPath: ingredientSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d90412c213d573498edcad8fc446599, type: 2}
     - target: {fileID: 3433099740107410457, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: m_Size.x
       value: 24.12
