@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Banana
   m_EditorClassIdentifier: 
   prefab: {fileID: 1623567025355851887, guid: f1a2d6de046cbfd4cb4118a041f9844d, type: 3}
-  sprite: {fileID: 21300000, guid: f31decaaa7d8e404388400c7e760a0ce, type: 3}
+  sprite: {fileID: 356952977, guid: 009974391e747c847a60a1741571213b, type: 3}
   ingredientName: Banana

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff7b0c88242ecfa4d9d855b39dffa30b
+guid: 009974391e747c847a60a1741571213b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pineapple_0
+      name: FruitSheet_0
       rect:
         serializedVersion: 2
-        x: 123
-        y: 1375
-        width: 1808
-        height: 1311
+        x: 11
+        y: 15
+        width: 339
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8655ca60c1bcf4c409b417ec35c98166
-      internalID: -1096542057
+      spriteID: 269814c4427537b458be83d0f433b6f2
+      internalID: -1669256920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pineapple_1
+      name: FruitSheet_1
       rect:
         serializedVersion: 2
-        x: 2357
-        y: 1608
-        width: 1891
-        height: 1099
+        x: 407
+        y: 21
+        width: 448
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d239c26cd11bc6459cc26f6305e375d
-      internalID: -290362097
+      spriteID: 9ee2459cc843d3c4dadc84d29938355b
+      internalID: 356952977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pineapple_2
+      name: FruitSheet_2
       rect:
         serializedVersion: 2
-        x: 1303
-        y: 107
-        width: 1628
-        height: 1101
+        x: 950
+        y: 0
+        width: 317
+        height: 348
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +205,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a2b93dcdccd9414099417d3e50fcfd2
-      internalID: 1246537985
+      spriteID: 2cc90b6f5d267a24994a98bc4951cb3a
+      internalID: 1970589318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 27
+        width: 408
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a6dc8fe233b584782f8ffd112fb65a
+      internalID: 311478439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 408
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e240bfa3a969c9d4e95d81a9d42735c9
+      internalID: 1760661143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 0
+        width: 264
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f529c903c4311414dbec3ff3ad0af5b9
+      internalID: 1630622988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 0
+        width: 510
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1d71652406d2347817f42c31647dad
+      internalID: -1720964180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 0
+        width: 446
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888396e303809dc47b968f84c36a579b
+      internalID: -1415855681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 7
+        width: 469
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4239b6dfa9bd47458bf1ad5b0d20271
+      internalID: 1043311236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FruitSheet_9
+      rect:
+        serializedVersion: 2
+        x: 4029
+        y: 0
+        width: 521
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c2c1c8cc32249458fc141b597298d7
+      internalID: -95225846
       vertices: []
       indices: 
       edges: []
@@ -209,9 +369,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pineapple_0: -1096542057
-      pineapple_1: -290362097
-      pineapple_2: 1246537985
+      FruitSheet_0: -1669256920
+      FruitSheet_1: 356952977
+      FruitSheet_2: 1970589318
+      FruitSheet_3: 311478439
+      FruitSheet_4: 1760661143
+      FruitSheet_5: 1630622988
+      FruitSheet_6: -1720964180
+      FruitSheet_7: -1415855681
+      FruitSheet_8: 1043311236
+      FruitSheet_9: -95225846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

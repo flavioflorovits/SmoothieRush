@@ -10,7 +10,7 @@ public class Blender : MonoBehaviour
     public List<IngredientSO> inputtedSOs;
     [SerializeField] private SpriteRenderer combined;
 
-    [SerializeField] private List<SmoothieSO> smoothieRecipes = new List<SmoothieSO>();
+    private List<SmoothieSO> smoothieRecipes = new List<SmoothieSO>();
 
     [SerializeField] private SmoothieSO botchedSmoothieSO;
 
@@ -18,6 +18,7 @@ public class Blender : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        smoothieRecipes = RecipeManager.Instance.unlockedSmoothieRecipes;
 
     }
 
@@ -66,7 +67,7 @@ public class Blender : MonoBehaviour
             if (checkedRecipe != null)
             {
                 doneSmoothie = checkedRecipe.prefab;
-                GameObject newObject = Instantiate(doneSmoothie, transform.position, Quaternion.identity);
+                GameObject newObject = Instantiate(doneSmoothie, transform.position+new Vector3(0,-1,0), Quaternion.identity);
                 Debug.Log(newObject.name);
                 SmoothieInfo newObjectInfo = newObject.GetComponent<SmoothieInfo>();
                 newObjectInfo.colorSprite.color = new Color(r/colorCount, g/colorCount, b/colorCount, 220f/255f);
