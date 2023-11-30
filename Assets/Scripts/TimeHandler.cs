@@ -7,6 +7,7 @@ public class TimeHandler : MonoBehaviour
 {
 
     public float roundTime;
+    private float timeLeft;
     public bool timerRunning = false;
     [SerializeField] private TextMeshProUGUI timeText;
     public static TimeHandler Instance { get; private set; }
@@ -25,6 +26,7 @@ public class TimeHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeLeft = roundTime;
         timerRunning = true;
     }
 
@@ -33,17 +35,17 @@ public class TimeHandler : MonoBehaviour
     {
         if (timerRunning)
         {
-            if (roundTime > 0)
+            if (timeLeft > 0)
             {
-                roundTime -= Time.deltaTime;
+                timeLeft -= Time.deltaTime;
             }
             else
             {
                 Debug.Log("Time has run out!");
-                roundTime = 0;
+                timeLeft = 0;
                 timerRunning = false;
             }
-            DisplayTime(roundTime);
+            DisplayTime(timeLeft);
 
         }
     }
@@ -61,4 +63,11 @@ public class TimeHandler : MonoBehaviour
             timeText.text = "00:00";
         }
     }
+
+    public void RestartTime()
+    {
+        timeLeft = roundTime;
+        timerRunning = true;
+    }
+
 }

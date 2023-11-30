@@ -31,9 +31,9 @@ public class CustomerManager : MonoBehaviour
     }
 
 
-    IEnumerator SpawnDelay()
+    public IEnumerator SpawnDelay()
     {
-
+        bool serviceComplete = false;
         do
         {
             int randomNumber = Random.Range(0, customers.Count);
@@ -52,7 +52,22 @@ public class CustomerManager : MonoBehaviour
             }
             yield return new WaitForSeconds(Random.Range(intervalMin, intervalMax));
         } while (TimeHandler.Instance.timerRunning);
-        
+
+        while (!serviceComplete)
+        {
+            for (int i = 0; i < customers.Count; i++)
+            {
+                serviceComplete = true;
+                if (customers[i].transform.Find("Order").gameObject.activeInHierarchy)
+                {
+                    serviceComplete = false;
+                    break;
+                }
+            }
+            yield return new WaitForSeconds(2f);
+        }
+
+        DayManager.Instance.CompleteDay();
     }
 
 }

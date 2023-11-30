@@ -8,11 +8,15 @@ public class Customer : MonoBehaviour
 
     public SmoothieSO smoothieSObject;
     public SmoothieInfo smoothieInfo;
+    public GameObject tickObject;
 
     private bool accepted = false;
+    private Image customerImage;
 
-
-
+    private void Start()
+    {
+        customerImage = GetComponent<Image>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Customer collided with something");
@@ -26,6 +30,7 @@ public class Customer : MonoBehaviour
                 Debug.Log("it was accepted");
                 accepted = true;
                 Debug.Log("Correct smoothie");
+                EnableTick();
                 StartCoroutine(WaitDisable(collision.gameObject));
             }
 
@@ -46,13 +51,27 @@ public class Customer : MonoBehaviour
         }
         smoothieSObject = smoothieInfo.smoothieSO;
     }
+
+    public void EnableTick()
+    {
+        for (int i = 0; i < smoothieInfo.orderIngredients.Length; i++)
+        {
+            Image image = smoothieInfo.orderIngredients[i];
+            if (image.sprite != null)
+            {
+                smoothieInfo.orderIngredients[i].gameObject.SetActive(false);
+            }
+        }
+        tickObject.SetActive(true);
+    }
+
     IEnumerator WaitDisable(GameObject smoothieObject)
     {
         Destroy(smoothieObject);
         yield return new WaitForSeconds(Random.Range(3, 7));
         transform.Find("Order").gameObject.SetActive(false);
-        gameObject.GetComponent<Image>().enabled = false;
-
+        customerImage.enabled = false;
+        tickObject.SetActive(false);
     }
 
 }

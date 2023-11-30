@@ -18,6 +18,7 @@ public class RecipeManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
 
