@@ -10,7 +10,6 @@ public class SmoothieInfo : MonoBehaviour
     public SmoothieSO smoothieSO;
     public GameObject blender;
     public Color smoothieColor;
-    public float smoothiePrice;
     public GameObject orderCanvas;
     
     public Image[] orderIngredients;

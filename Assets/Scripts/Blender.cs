@@ -66,6 +66,10 @@ public class Blender : MonoBehaviour
             GameObject doneSmoothie;
             if (checkedRecipe != null)
             {
+                if (checkedRecipe == botchedSmoothieSO)
+                {
+                    DayManager.Instance.AddBotch();
+                }
                 doneSmoothie = checkedRecipe.prefab;
                 GameObject newObject = Instantiate(doneSmoothie, transform.position+new Vector3(0,-1,0), Quaternion.identity);
                 Debug.Log(newObject.name);
@@ -88,7 +92,7 @@ public class Blender : MonoBehaviour
             inputtedSOs.Clear();
 
             isFilled = false;
-
+            DayManager.Instance.AddSmoothie();
             gameObject.SetActive(false);
         }
 

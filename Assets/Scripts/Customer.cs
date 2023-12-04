@@ -25,11 +25,13 @@ public class Customer : MonoBehaviour
             Debug.Log("It was a smoothie");
             Debug.Log(smoothieSObject);
             Debug.Log(collision.gameObject.GetComponent<SmoothieInfo>().smoothieSO);
-            if (!accepted && collision.gameObject.GetComponent<SmoothieInfo>().smoothieSO == smoothieSObject)
+            SmoothieSO inputtedSObject = collision.gameObject.GetComponent<SmoothieInfo>().smoothieSO;
+            if (!accepted && inputtedSObject == smoothieSObject)
             {
                 Debug.Log("it was accepted");
                 accepted = true;
                 Debug.Log("Correct smoothie");
+                DayManager.Instance.PaySmoothie(inputtedSObject.smoothiePrice);
                 EnableTick();
                 StartCoroutine(WaitDisable(collision.gameObject));
             }

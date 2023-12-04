@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7359521701716178641, guid: 44898ba360f4c3d4b81b7ef7410ff12b, type: 3}
   sprite: {fileID: -95225846, guid: 009974391e747c847a60a1741571213b, type: 3}
+  ingredientPrice: 0.4
   ingredientName: Pineapple

@@ -9,6 +9,8 @@ public class SmoothieSO : ScriptableObject
     public GameObject prefab;
     public int ingredientCount;
     public string recipeName;
+    public float smoothiePrice;
+
 
     public List<IngredientSO> ingredients = new List<IngredientSO>();
 }

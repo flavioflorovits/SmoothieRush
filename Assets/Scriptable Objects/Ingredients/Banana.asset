@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1623567025355851887, guid: f1a2d6de046cbfd4cb4118a041f9844d, type: 3}
   sprite: {fileID: 356952977, guid: 009974391e747c847a60a1741571213b, type: 3}
+  ingredientPrice: 0.2
   ingredientName: Banana

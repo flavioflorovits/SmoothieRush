@@ -15,5 +15,6 @@ MonoBehaviour:
   prefab: {fileID: 711750324070344782, guid: b793156637a7aad46a794f9d03ca3281, type: 3}
   ingredientCount: 3
   recipeName: Strawberry Smoothie
+  smoothiePrice: 5
   ingredients:
   - {fileID: 11400000, guid: 9d90412c213d573498edcad8fc446599, type: 2}

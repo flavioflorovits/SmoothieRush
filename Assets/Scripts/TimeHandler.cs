@@ -24,11 +24,11 @@ public class TimeHandler : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        timeLeft = roundTime;
-        timerRunning = true;
-    }
+    //void start()
+    //{
+    //    timeleft = roundtime;
+    //    timerrunning = true;
+    //}
 
     // Update is called once per frame
     void Update()

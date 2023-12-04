@@ -45,6 +45,7 @@ public class IngredientTouch : MonoBehaviour
                             originalOrder = clonedObject.GetComponent<SpriteRenderer>().sortingOrder;
                             clonedObject.GetComponent<SpriteRenderer>().sortingOrder = 100;
                             isDragging = true;
+                            DayManager.Instance.PayIngredient(clonedObject.GetComponent<IngredientInfo>().ingredientSO.ingredientPrice);
                         }
 
                     }
@@ -68,7 +69,7 @@ public class IngredientTouch : MonoBehaviour
                     }
                 break;
                 case TouchPhase.Canceled:
-                    isDragging = false;
+                    isDragging = false;                
                     if (clonedObject != null)
                     {
                         clonedObject.GetComponent<SpriteRenderer>().sortingOrder = originalOrder;

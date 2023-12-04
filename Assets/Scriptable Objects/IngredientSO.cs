@@ -8,6 +8,8 @@ public class IngredientSO : ScriptableObject
 {
     public GameObject prefab;
     public Sprite sprite;
+    public float ingredientPrice;
+
 
     public string ingredientName;
 

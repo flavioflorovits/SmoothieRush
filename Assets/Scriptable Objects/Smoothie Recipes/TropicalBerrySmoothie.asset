@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ee956a2c6866a4bac3cf4f9803edfc, type: 3}
+  m_Name: TropicalBerrySmoothie
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 711750324070344782, guid: b793156637a7aad46a794f9d03ca3281, type: 3}
+  ingredientCount: 3
+  recipeName: Tropical Berry Smoothie
+  smoothiePrice: 8
+  ingredients:
+  - {fileID: 11400000, guid: b6a5d932acfc8ce43a8bf181d737faec, type: 2}
+  - {fileID: 11400000, guid: 9d90412c213d573498edcad8fc446599, type: 2}
+  - {fileID: 11400000, guid: b8fe778ea221d14409fa69a096931902, type: 2}

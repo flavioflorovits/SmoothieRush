@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8015725974954597909, guid: a885cfce2d522214ba920ef3ba7e4912, type: 3}
   sprite: {fileID: -1415855681, guid: 009974391e747c847a60a1741571213b, type: 3}
+  ingredientPrice: 0.3
   ingredientName: Strawberry

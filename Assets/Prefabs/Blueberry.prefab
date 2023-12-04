@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: fruitColor.r
       value: 0.07453719
       objectReference: {fileID: 0}
+    - target: {fileID: -7714710310699835672, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
+      propertyPath: ingredientSO
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a5d932acfc8ce43a8bf181d737faec, type: 2}
     - target: {fileID: 2465312857858068593, guid: bc640ea5fca079543b44301a0a9e2989, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 19.2
