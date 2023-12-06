@@ -461,7 +461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340451586}
   m_Layer: 0
-  m_Name: Fruits
+  m_Name: Ingredients
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951274826}
   m_Layer: 5
-  m_Name: Ingredients
+  m_Name: IngredientHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,18 +2611,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 340451586}
     m_Modifications:
-    - target: {fileID: 5489352733237511300, guid: 8e7c5e9c2cadb404f961905e8da71b73, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.24133167
-      objectReference: {fileID: 0}
-    - target: {fileID: 5489352733237511300, guid: 8e7c5e9c2cadb404f961905e8da71b73, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.24133167
-      objectReference: {fileID: 0}
-    - target: {fileID: 5489352733237511300, guid: 8e7c5e9c2cadb404f961905e8da71b73, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.24012566
-      objectReference: {fileID: 0}
     - target: {fileID: 5489352733237511300, guid: 8e7c5e9c2cadb404f961905e8da71b73, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.71
