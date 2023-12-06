@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: TropicalBerrySmoothie
   m_EditorClassIdentifier: 
   prefab: {fileID: 711750324070344782, guid: b793156637a7aad46a794f9d03ca3281, type: 3}
-  ingredientCount: 3
+  ingredientCount: 4
   recipeName: Tropical Berry Smoothie
   smoothiePrice: 8
   ingredients:
   - {fileID: 11400000, guid: b6a5d932acfc8ce43a8bf181d737faec, type: 2}
   - {fileID: 11400000, guid: 9d90412c213d573498edcad8fc446599, type: 2}
   - {fileID: 11400000, guid: b8fe778ea221d14409fa69a096931902, type: 2}
+  - {fileID: 11400000, guid: 7ecc27de3db4edf47beb91b924113529, type: 2}

@@ -38,9 +38,12 @@ public class CustomerManager : MonoBehaviour
         {
             int randomNumber = Random.Range(0, customers.Count);
 
-            if (!customers[randomNumber].transform.Find("Order").gameObject.activeInHierarchy)
+            if (!customers[randomNumber].transform.Find("Order").gameObject.activeInHierarchy && availableRecipes.Count > 0)
             {
-                SmoothieSO selectedRecipe = availableRecipes[Random.Range(0, availableRecipes.Count)];
+                int randomIndex = Random.Range(0, availableRecipes.Count);
+                Debug.Log(randomIndex);
+                Debug.Log(availableRecipes.Count);
+                SmoothieSO selectedRecipe = availableRecipes[randomIndex];
                 Customer customer = customers[randomNumber].GetComponent<Customer>();
                 customers[randomNumber].GetComponent<Image>().sprite = customerModels[Random.Range(0, customerModels.Count)];
                 customer.smoothieSObject = selectedRecipe;

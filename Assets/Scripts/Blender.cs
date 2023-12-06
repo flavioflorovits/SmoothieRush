@@ -74,10 +74,10 @@ public class Blender : MonoBehaviour
                 GameObject newObject = Instantiate(doneSmoothie, transform.position+new Vector3(0,-1,0), Quaternion.identity);
                 Debug.Log(newObject.name);
                 SmoothieInfo newObjectInfo = newObject.GetComponent<SmoothieInfo>();
-                newObjectInfo.colorSprite.color = new Color(r/colorCount, g/colorCount, b/colorCount, 220f/255f);
                 newObjectInfo.smoothieSO = checkedRecipe;
                 newObjectInfo.blender = gameObject;
                 newObject.name = checkedRecipe.recipeName;
+                newObjectInfo.SetSmoothieColour(new Color(r / colorCount, g / colorCount, b / colorCount, 220f / 255f));
             }
             foreach (SpriteRenderer ingredient in inputtedIngredients)
             {

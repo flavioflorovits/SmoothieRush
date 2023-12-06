@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: BananaSmoothie
   m_EditorClassIdentifier: 
   prefab: {fileID: 711750324070344782, guid: b793156637a7aad46a794f9d03ca3281, type: 3}
-  ingredientCount: 3
+  ingredientCount: 2
   recipeName: Banana Smoothie
   smoothiePrice: 5
   ingredients:
   - {fileID: 11400000, guid: e85505df247f3334a94ee5a1c002a92b, type: 2}
+  - {fileID: 11400000, guid: 7ecc27de3db4edf47beb91b924113529, type: 2}

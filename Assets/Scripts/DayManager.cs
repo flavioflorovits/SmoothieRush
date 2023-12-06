@@ -16,6 +16,8 @@ public class DayManager : MonoBehaviour
     private int smoothiesBotched = 0;
     private int ingredientsUsed = 0;
 
+
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -58,6 +60,7 @@ public class DayManager : MonoBehaviour
     {
         money += amount;
         moneyEarned += amount;
+        MoneyHandler.Instance.UpdateMoney(money);
     }
 
     public void PayIngredient(float amount)
@@ -65,6 +68,8 @@ public class DayManager : MonoBehaviour
         AddIngredient();
         money -= amount;
         moneySpent += amount;
+        MoneyHandler.Instance.UpdateMoney(money);
+
     }
 
     private void ResetStats()
@@ -103,6 +108,7 @@ public class DayManager : MonoBehaviour
         }
         else if(scene.name == "Main")
         {
+            MoneyHandler.Instance.UpdateMoney(money);
             ResetStats();
             TimeHandler.Instance.RestartTime();
             StartCoroutine(CustomerManager.Instance.SpawnDelay());
