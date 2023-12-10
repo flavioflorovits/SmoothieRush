@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b8f237a3c46d14c8be9b205923a8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundTime: 15
+  roundTime: 90
   timerRunning: 0
   timeText: {fileID: 1038624529}
 --- !u!1 &1113757857
@@ -1976,8 +1976,8 @@ MonoBehaviour:
   - {fileID: 131239746, guid: b2025023970d11147b551d3dced7aad0, type: 3}
   - {fileID: -1403125795, guid: b2025023970d11147b551d3dced7aad0, type: 3}
   - {fileID: -826697561, guid: b2025023970d11147b551d3dced7aad0, type: 3}
-  intervalMin: 1
-  intervalMax: 3
+  intervalMin: 3
+  intervalMax: 10
 --- !u!1 &1761705773
 GameObject:
   m_ObjectHideFlags: 0
